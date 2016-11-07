@@ -18,5 +18,8 @@ Route::get('/', function () {
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
     Route::get('/admin', 'HomeController@index');
+    Route::get('/{vue_capture?}', function () {
+        return view('home');
+    })->where('vue_capture', '[\/\w\.-]*');
 
 });

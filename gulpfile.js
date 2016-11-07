@@ -1,5 +1,5 @@
 var elixir = require('laravel-elixir');
-
+require('laravel-elixir-vue-2');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -11,8 +11,12 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.less('app.less');
-    mix.less('admin-lte/AdminLTE.less');
-    mix.less('bootstrap/bootstrap.less');
+// elixir(function(mix) {
+//     mix.less('app.less');
+//     mix.less('admin-lte/AdminLTE.less');
+//     mix.less('bootstrap/bootstrap.less');
+// });
+
+elixir(function (mix) {
+    mix.webpack('jmed.js');
 });
