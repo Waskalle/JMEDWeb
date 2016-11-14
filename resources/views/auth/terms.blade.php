@@ -1,4 +1,4 @@
-<!-- Terms and conditions modal -->
+{{-- Terms and conditions modal --}}
 <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="Terms and conditions" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

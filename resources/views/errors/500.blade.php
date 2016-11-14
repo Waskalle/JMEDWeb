@@ -27,8 +27,8 @@
                     <div class="input-group-btn">
                         <button type="submit" name="submit" class="btn btn-danger btn-flat"><i class="fa fa-search"></i></button>
                     </div>
-                </div><!-- /.input-group -->
+                </div>{{-- /.input-group --}}
             </form>
         </div>
-    </div><!-- /.error-page -->
+    </div>{{-- /.error-page --}}
 @endsection

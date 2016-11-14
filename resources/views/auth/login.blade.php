@@ -9,7 +9,7 @@
     <div class="login-box">
         <div class="login-logo">
             <a href="{{ url('/home') }}"><b>Admin</b>LTE</a>
-        </div><!-- /.login-logo -->
+        </div>{{-- /.login-logo --}}
 
     @if (count($errors) > 0)
         <div class="alert alert-danger">
@@ -41,10 +41,10 @@
                         <input type="checkbox" name="remember"> {{ trans('adminlte_lang::message.remember') }}
                     </label>
                 </div>
-            </div><!-- /.col -->
+            </div>{{-- /.col --}}
             <div class="col-xs-4">
                 <button type="submit" class="btn btn-primary btn-block btn-flat">{{ trans('adminlte_lang::message.buttonsign') }}</button>
-            </div><!-- /.col -->
+            </div>{{-- /.col --}}
         </div>
     </form>
 
@@ -53,9 +53,9 @@
     <a href="{{ url('/password/reset') }}">{{ trans('adminlte_lang::message.forgotpassword') }}</a><br>
     <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
 
-</div><!-- /.login-box-body -->
+</div>{{-- /.login-box-body --}}
 
-</div><!-- /.login-box -->
+</div>{{-- /.login-box --}}
 
     @include('layouts.partials.scripts_auth')
 

@@ -10,7 +10,7 @@
     <div class="login-box">
         <div class="login-logo">
             <a href="{{ url('/home') }}"><b>Admin</b>LTE</a>
-        </div><!-- /.login-logo -->
+        </div>{{-- /.login-logo --}}
 
         @if (session('status'))
             <div class="alert alert-success">
@@ -40,21 +40,21 @@
 
                 <div class="row">
                     <div class="col-xs-2">
-                    </div><!-- /.col -->
+                    </div>{{-- /.col --}}
                     <div class="col-xs-8">
                         <button type="submit" class="btn btn-primary btn-block btn-flat">{{ trans('adminlte_lang::message.sendpassword') }}</button>
-                    </div><!-- /.col -->
+                    </div>{{-- /.col --}}
                     <div class="col-xs-2">
-                    </div><!-- /.col -->
+                    </div>{{-- /.col --}}
                 </div>
             </form>
 
             <a href="{{ url('/login') }}">Log in</a><br>
             <a href="{{ url('/register') }}" class="text-center">{{ trans('adminlte_lang::message.registermember') }}</a>
 
-        </div><!-- /.login-box-body -->
+        </div>{{-- /.login-box-body --}}
 
-    </div><!-- /.login-box -->
+    </div>{{-- /.login-box --}}
 
     @include('layouts.partials.scripts_auth')
 

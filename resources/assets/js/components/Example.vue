@@ -1,13 +1,7 @@
 <template>
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Example Component</div>
-
-                <div class="panel-body">
-                    I'm an example component!
-                </div>
-            </div>
+    <div class="box box-primary color-palette-box">
+        <div class="box-header with-border">
+            <div class="panel-heading">Example Component</div>
         </div>
     </div>
 </template>

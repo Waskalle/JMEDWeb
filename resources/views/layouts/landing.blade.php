@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!--
+{{--
 Landing page based on Pratt: http://blacktie.co/demo/pratt/
--->
+--}}
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adminlte-laravel - {{ trans('adminlte_lang::message.landingdescription') }} ">
+    <meta name="description" content="J-MED Enterprise">
     <meta name="author" content="Sergi Tur Badenas - acacha.org">
 
     <meta property="og:title" content="Adminlte-laravel" />
@@ -23,12 +23,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="twitter:site" content="@acachawiki" />
     <meta name="twitter:creator" content="@acacha1" />
 
-    <title>{{ trans('adminlte_lang::message.landingdescriptionpratt') }}</title>
+    <title>J-MED Enterpise</title>
 
-    <!-- Bootstrap core CSS -->
+    {{-- Bootstrap core CSS --}}
     <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    {{-- Custom styles for this template --}}
     <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -42,7 +42,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
 <body data-spy="scroll" data-offset="0" data-target="#navigation">
 
-<!-- Fixed navbar -->
+{{-- Fixed navbar --}}
 <div id="navigation" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -51,7 +51,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><b>adminlte-laravel</b></a>
+            <a class="navbar-brand" href="#"><b>J-MED Enterpise</b></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -68,7 +68,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <li><a href="/home">{{ Auth::user()->name }}</a></li>
                 @endif
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>{{--/.nav-collapse --}}
     </div>
 </div>
 
@@ -99,12 +99,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <p>... {{ trans('adminlte_lang::message.by') }} <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a> {{ trans('adminlte_lang::message.at') }} <a href="http://acacha.org">acacha.org</a> {{ trans('adminlte_lang::message.readytouse') }}</p>
             </div>
         </div>
-    </div> <!--/ .container -->
-</div><!--/ #headerwrap -->
+    </div> {{--/ .container --}}
+</div>{{--/ #headerwrap --}}
 
 
 <section id="desc" name="desc"></section>
-<!-- INTRO WRAP -->
+{{-- INTRO WRAP --}}
 <div id="intro">
     <div class="container">
         <div class="row centered">
@@ -129,10 +129,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </div>
         <br>
         <hr>
-    </div> <!--/ .container -->
-</div><!--/ #introwrap -->
+    </div> {{--/ .container --}}
+</div>{{--/ #introwrap --}}
 
-<!-- FEATURES WRAP -->
+{{-- FEATURES WRAP --}}
 <div id="features">
     <div class="container">
         <div class="row">
@@ -146,20 +146,20 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <div class="col-lg-6">
                 <h3>{{ trans('adminlte_lang::message.features') }}</h3>
                 <br>
-                <!-- ACCORDION -->
+                {{-- ACCORDION --}}
                 <div class="accordion ac" id="accordion2">
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                                 {{ trans('adminlte_lang::message.design') }}
                             </a>
-                        </div><!-- /accordion-heading -->
+                        </div>{{-- /accordion-heading --}}
                         <div id="collapseOne" class="accordion-body collapse in">
                             <div class="accordion-inner">
                                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
+                            </div>{{-- /accordion-inner --}}
+                        </div>{{-- /collapse --}}
+                    </div>{{-- /accordion-group --}}
                     <br>
 
                     <div class="accordion-group">
@@ -171,9 +171,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <div id="collapseTwo" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
+                            </div>{{-- /accordion-inner --}}
+                        </div>{{-- /collapse --}}
+                    </div>{{-- /accordion-group --}}
                     <br>
 
                     <div class="accordion-group">
@@ -185,9 +185,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <div id="collapseThree" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
+                            </div>{{-- /accordion-inner --}}
+                        </div>{{-- /collapse --}}
+                    </div>{{-- /accordion-group --}}
                     <br>
 
                     <div class="accordion-group">
@@ -199,15 +199,15 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <div id="collapseFour" class="accordion-body collapse">
                             <div class="accordion-inner">
                                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            </div><!-- /accordion-inner -->
-                        </div><!-- /collapse -->
-                    </div><!-- /accordion-group -->
+                            </div>{{-- /accordion-inner --}}
+                        </div>{{-- /collapse --}}
+                    </div>{{-- /accordion-group --}}
                     <br>
-                </div><!-- Accordion -->
+                </div>{{-- Accordion --}}
             </div>
         </div>
-    </div><!--/ .container -->
-</div><!--/ #features -->
+    </div>{{--/ .container --}}
+</div>{{--/ #features --}}
 
 
 <section id="showcase" name="showcase"></section>
@@ -218,13 +218,13 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <br>
             <div class="col-lg-8 col-lg-offset-2">
                 <div id="carousel-example-generic" class="carousel slide">
-                    <!-- Indicators -->
+                    {{-- Indicators --}}
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     </ol>
 
-                    <!-- Wrapper for slides -->
+                    {{-- Wrapper for slides --}}
                     <div class="carousel-inner">
                         <div class="item active">
                             <img src="{{ asset('/img/item-01.png') }}" alt="">
@@ -239,7 +239,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         <br>
         <br>
         <br>
-    </div><!-- /container -->
+    </div>{{-- /container --}}
 </div>
 
 
@@ -293,9 +293,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 </div>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+{{-- Bootstrap core JavaScript
+================================================== --}}
+{{-- Placed at the end of the document so the pages load faster --}}
 <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>
 <script>
     $('.carousel').carousel({

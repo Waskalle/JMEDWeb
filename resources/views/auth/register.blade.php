@@ -52,23 +52,23 @@
                                 </label>
                             </div>
                         </label>
-                    </div><!-- /.col -->
+                    </div>{{-- /.col --}}
                     <div class="col-xs-6">
                         <div class="form-group">
                             <button type="button" class="btn btn-block btn-flat" data-toggle="modal" data-target="#termsModal">{{ trans('adminlte_lang::message.terms') }}</button>
                         </div>
-                    </div><!-- /.col -->
+                    </div>{{-- /.col --}}
                     <div class="col-xs-4 col-xs-push-1">
                         <button type="submit" class="btn btn-primary btn-block btn-flat">{{ trans('adminlte_lang::message.register') }}</button>
-                    </div><!-- /.col -->
+                    </div>{{-- /.col --}}
                 </div>
             </form>
 
             @include('auth.partials.social_login')
 
             <a href="{{ url('/login') }}" class="text-center">{{ trans('adminlte_lang::message.membreship') }}</a>
-        </div><!-- /.form-box -->
-    </div><!-- /.register-box -->
+        </div>{{-- /.form-box --}}
+    </div>{{-- /.register-box --}}
 
     @include('layouts.partials.scripts_auth')
 
