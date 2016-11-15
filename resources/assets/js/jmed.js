@@ -15,6 +15,7 @@ require('./bootstrap');
 
 import VueRouter from 'vue-router'
 import VueProgressBar from 'vue-progressbar'
+import VueMaterial from 'vue-material'
 
 Vue.use(VueRouter)
 Vue.use(VueProgressBar, {
@@ -23,9 +24,17 @@ Vue.use(VueProgressBar, {
     height: '2px'
 })
 
+Vue.use(VueMaterial)
+
+Vue.material.theme.register('default', {
+    primary: 'indigo',
+    accent: 'white'
+})
+
 const Home = require('./components/Example.vue')
 
 const User = require('./components/User.vue')
+const UserCreate = require('./components/user/Create.vue')
 // Vue.component('example', require('./components/Example.vue'));
 
 const routes = [
@@ -41,7 +50,16 @@ const routes = [
         component: User,
         meta: {
             breadcrumb: 'Usuarios',
-        }
+        },
+        children: [
+            {
+                path: 'create',
+                component: UserCreate,
+                meta: {
+                    breadcrumb: 'Crear',
+                },
+            },
+        ],
     }
 ]
 

@@ -30,7 +30,7 @@ desired effect
 |---------------------------------------------------------|
 --}}
 <body class="skin-blue sidebar-mini">
-<div class="wrapper" id="app">
+<div class="wrapper" id="app" v-md-theme="'default'">
 
     @include('layouts.partials.mainheader')
 
