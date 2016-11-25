@@ -34,8 +34,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-    <script src="{{ asset('/plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
-    <script src="{{ asset('/js/smoothscroll.js') }}"></script>
+    {{-- <script src="{{ asset('/plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
+    <script src="{{ asset('/js/smoothscroll.js') }}"></script> --}}
+    <script src="{{ asset('/js/landing.js') }}"></script>
 
 
 </head>
@@ -103,7 +104,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 </div>{{--/ #headerwrap --}}
 
 
-<section id="desc" name="desc"></section>
+<section id="desc" name="desc">description</section>
 {{-- INTRO WRAP --}}
 <div id="intro">
     <div class="container">
@@ -211,7 +212,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
 
 <section id="showcase" name="showcase"></section>
-<div id="showcase">
+<div id="showcases">
     <div class="container">
         <div class="row">
             <h1 class="centered">{{ trans('adminlte_lang::message.screenshots') }}</h1>

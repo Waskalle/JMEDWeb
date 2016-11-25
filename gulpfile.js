@@ -19,4 +19,5 @@ require('laravel-elixir-vue-2');
 
 elixir(function (mix) {
     mix.webpack('jmed.js');
+    mix.webpack('landing.js');
 });

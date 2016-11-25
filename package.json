@@ -18,5 +18,8 @@
     "vue-progressbar": "^0.5.2",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.1"
+  },
+  "dependencies": {
+    "smooth-scroll": "cferdinandi/smooth-scroll"
   }
 }

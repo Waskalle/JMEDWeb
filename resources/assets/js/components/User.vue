@@ -1,11 +1,9 @@
 <template>
     <div class="box box-primary color-palette-box">
         <div class="box-header with-border">
-            <md-button class="md-raised md-primary">
-                <router-link to="/user/create">
-                    <i class="fa fa-plus"></i> Nuevo Usuario
-                </router-link>
-            </md-button>
+            <router-link to="/user/create" class="btn btn-primary">
+                <i class="fa fa-plus"></i> Nuevo Usuario
+            </router-link>
         </div>
         <router-view></router-view>
     </div>

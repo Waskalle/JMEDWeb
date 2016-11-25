@@ -35,26 +35,27 @@ const Home = require('./components/Example.vue')
 
 const User = require('./components/User.vue')
 const UserCreate = require('./components/user/Create.vue')
+const UserIndex = require('./components/user/Index.vue')
 // Vue.component('example', require('./components/Example.vue'));
 
 const routes = [
     {
-        path: '/home',
-        component: Home,
+        path: '/home', component: Home,
         meta: {
             breadcrumb: 'Inicio',
         }
     },
     {
-        path: '/user',
-        component: User,
+        path: '/user', component: User,
         meta: {
             breadcrumb: 'Usuarios',
         },
         children: [
             {
-                path: 'create',
-                component: UserCreate,
+                path: '', component: UserIndex,
+            },
+            {
+                path: 'create', component: UserCreate,
                 meta: {
                     breadcrumb: 'Crear',
                 },

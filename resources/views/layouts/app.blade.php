@@ -7,6 +7,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 @section('htmlheader')
     @include('layouts.partials.htmlheader')
+    <script>
+        window.Jmed =
+        <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+            'api' => '/api/v1',
+        ]); ?>
+    </script>
 @show
 
 {{--

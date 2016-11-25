@@ -168,6 +168,7 @@ return [
          */
 
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
 
         //
 
